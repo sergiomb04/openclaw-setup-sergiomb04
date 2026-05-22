@@ -1,0 +1,23 @@
+{
+  "name": "gcm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bin": {
+    "gcm": "./bin/gcm.js"
+  },
+  "dependencies": {
+    "@cerebras/cerebras_cloud_sdk": "^1.64.1",
+    "chalk": "^5.3.1",
+    "cerebras": "^0.0.1-security.1",
+    "dotenv": "^17.4.2",
+    "inquirer": "^9.2.7"
+  }
+}
