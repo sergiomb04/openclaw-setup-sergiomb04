@@ -1,0 +1,34 @@
+{
+  "name": "inbox-triage",
+  "version": "1.0.0",
+  "description": "OpenClaw skill for automated email-to-task conversion using Composio MCP tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "openclaw",
+    "skill",
+    "composio",
+    "mcp",
+    "email",
+    "automation",
+    "gmail",
+    "googletasks",
+    "telegram"
+  ],
+  "author": "TaskFlow Commander",
+  "license": "MIT",
+  "dependencies": {},
+  "openclaw": {
+    "skill": true,
+    "category": "automation",
+    "emoji": "📧",
+    "requires": {
+      "composio": {
+        "tools": ["gmail.read", "gmail.modify", "googletasks.create", "googletasks.list", "telegram.send"]
+      }
+    }
+  }
+}

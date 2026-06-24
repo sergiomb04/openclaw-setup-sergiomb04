@@ -1,0 +1,34 @@
+{
+  "name": "daily-knowledge-journal",
+  "version": "1.0.0",
+  "description": "OpenClaw skill for automated knowledge capture and documentation using Composio MCP tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "openclaw",
+    "skill",
+    "composio",
+    "mcp",
+    "knowledge",
+    "documentation",
+    "googledocs",
+    "telegram",
+    "journal"
+  ],
+  "author": "TaskFlow Commander",
+  "license": "MIT",
+  "dependencies": {},
+  "openclaw": {
+    "skill": true,
+    "category": "documentation",
+    "emoji": "📚",
+    "requires": {
+      "composio": {
+        "tools": ["googledocs.create", "googledocs.update", "googledocs.get", "telegram.send", "telegram.receive"]
+      }
+    }
+  }
+}
