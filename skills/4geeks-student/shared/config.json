@@ -1,0 +1,39 @@
+{
+  "name": "4geeks-integration",
+  "version": "1.0.0",
+  "description": "Integración con 4Geeks Academy para OpenClaw",
+  "author": "Sergio (smb23845)",
+  "created": "2026-06-26",
+  "config": {
+    "token_env_var": "GEEKS_TOKEN",
+    "api_base": "https://breathecode.herokuapp.com/v1/admissions",
+    "auth_scheme": "Token",
+    "endpoints": {
+      "user_me": "/user/me"
+    },
+    "timeout_ms": 10000,
+    "retry_attempts": 3
+  },
+  "skills": [
+    {
+      "name": "4geeks-auth",
+      "description": "Verificar token y sesión activa",
+      "status": "implemented"
+    },
+    {
+      "name": "4geeks-projects",
+      "description": "Obtener lista de proyectos con estados",
+      "status": "implemented"
+    },
+    {
+      "name": "4geeks-pending",
+      "description": "Identificar trabajo pendiente",
+      "status": "implemented"
+    },
+    {
+      "name": "4geeks-progress",
+      "description": "Resumen de progreso del curso",
+      "status": "implemented"
+    }
+  ]
+}
