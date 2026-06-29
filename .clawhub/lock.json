@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "skills": {
+    "qmd": {
+      "version": "1.0.0",
+      "installedAt": 1782754161706,
+      "registry": "https://clawhub.ai",
+      "artifact": {
+        "kind": "archive",
+        "sha256": "b0f9c1b9757c0069f0a848353487bd573dd8297ece53e9ce8c0951a6ba4fbe49",
+        "integrity": "sha256-sPnBuXV8AGnwqEg1NIe9Vz3YKX7OU+nOjAlRprpPvkk="
+      },
+      "skillFile": {
+        "path": "SKILL.md",
+        "sha256": "8d0a688885a61062a655259d755d050e5a51a54d80fe1c1643756bf0dbba41cf"
+      },
+      "verification": {
+        "schema": "clawhub.skill.verify.v1",
+        "ok": true,
+        "decision": "pass",
+        "reasons": [],
+        "card": {
+          "available": true,
+          "path": "skill-card.md",
+          "url": "https://wry-manatee-359.convex.site/api/v1/skills/qmd/card?ownerHandle=steipete&version=1.0.0",
+          "sha256": "0e987bc3c6169729a552ae0950ed9124038ee284d4da87bbb1ab176cc254743f",
+          "size": 1870,
+          "contentType": "text/markdown; charset=utf-8"
+        },
+        "artifact": {
+          "sourceFingerprint": null,
+          "bundleFingerprints": [
+            "ba5b37dc523e31c1603d65d9c0205ee775f9eb28c5d950c3baf7541e4cb9ec3b"
+          ],
+          "files": [
+            {
+              "path": "SKILL.md",
+              "size": 817,
+              "sha256": "8d0a688885a61062a655259d755d050e5a51a54d80fe1c1643756bf0dbba41cf",
+              "contentType": "text/markdown"
+            }
+          ]
+        },
+        "provenance": {
+          "source": "unavailable",
+          "reason": "No server-resolved GitHub import provenance is stored for this version."
+        },
+        "security": {
+          "status": "clean",
+          "passed": true,
+          "rawStatus": "clean",
+          "verdict": "benign",
+          "confidence": "high",
+          "summary": "Qmd is a disclosed local file indexing and search skill, with the main caution being that users should intentionally choose what files to index.",
+          "model": "gpt-5.5",
+          "checkedAt": 1779912345240,
+          "signals": {
+            "staticScan": {
+              "status": "clean",
+              "rawStatus": "clean",
+              "reasonCodes": [],
+              "summary": "No suspicious patterns detected.",
+              "engineVersion": "v2.4.5",
+              "checkedAt": 1777524883635
+            },
+            "virusTotal": {
+              "status": "clean",
+              "rawStatus": "clean",
+              "verdict": "benign",
+              "analysis": "Type: OpenClaw Skill\nName: qmd\nVersion: 1.0.0\n\nThe skill bundle defines a local search/indexing CLI tool. The `SKILL.md` provides installation instructions for `qmd` from a seemingly legitimate GitHub repository (`https://github.com/tobi/qmd`) and outlines local CLI usage. There is no evidence of data exfiltration, malicious execution instructions, persistence mechanisms, prompt injection attempts, or obfuscation. All described operations are local and aligned with the stated purpose of a search/indexing tool.",
+              "source": "palm",
+              "scanner": "code_insight",
+              "engineStats": {
+                "harmless": 0,
+                "malicious": 0,
+                "suspicious": 0,
+                "undetected": 63
+              },
+              "checkedAt": 1779159623316
+            },
+            "skillSpector": {
+              "status": "clean",
+              "rawStatus": "clean",
+              "score": 0,
+              "severity": "LOW",
+              "recommendation": "SAFE",
+              "issueCount": 0,
+              "scannerVersion": "2.0.0",
+              "summary": null,
+              "error": null,
+              "checkedAt": 1779912312915
+            },
+            "dependencyRegistry": null
+          }
+        },
+        "signature": {
+          "status": "unsigned"
+        }
+      }
+    }
+  }
+}
